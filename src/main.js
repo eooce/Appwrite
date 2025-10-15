@@ -3,12 +3,12 @@
 const YT_WARPOUT = process.env.YT_WARPOUT || false;   // 设置为true时强制使用warp出站访问youtube,false时自动检测是否设置warp出站
 const FILE_PATH = process.env.FILE_PATH || './.npm';  // sub.txt订阅文件路径
 const SUB_PATH = process.env.SUB_PATH || 'sub';       // 订阅sub路径，默认为sub,例如：https://google.com/sub
-const UUID = process.env.UUID || '0a6568ff-ea3c-4271-9020-450560e10d65';  // UUID,如果开启了哪吒v1,也会使用此uuid
+const UUID = process.env.UUID || 'ded5231c-0b7c-4566-a6b1-b67981e337d1';  // UUID,如果开启了哪吒v1,也会使用此uuid
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';         // 哪吒面板地址,v1形式：nz.serv00.net:8008  v0形式：nz.serv00.net
 const NEZHA_PORT = process.env.NEZHA_PORT || '';             // v1哪吒请留空，v0 agent端口，当端口为{443,8443,2087,2083,2053,2096}时，自动开启tls
 const NEZHA_KEY = process.env.NEZHA_KEY || '';               // v1的NZ_CLIENT_SECRET或v0 agwnt密钥 
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';           // argo固定隧道域名,留空即使用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || '';               // argo固定隧道token或json,留空即使用临时隧道
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'fr.007.us.kg';           // argo固定隧道域名,留空即使用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNmUwMjg3ZjVhNzkwNDM5NWJmOGI5NjU5YTU1ZjY2Y2UiLCJ0IjoiYzk1OGQyMmQtOWY0NC00MjU2LWI5YzgtZjVhM2ZkNmIwMzFkIiwicyI6IllqYzRNemhsWkRJdE1tWm1OQzAwWm1OakxUazFZalF0T0RJeE5EVm1aR0ZrTWpndyJ9';               // argo固定隧道token或json,留空即使用临时隧道
 const ARGO_PORT = process.env.ARGO_PORT || 8001;             // argo固定隧道端口,使用token需在cloudflare控制台设置和这里一致，否则节点不通
 const TUIC_PORT = process.env.TUIC_PORT || '';               // tuic端口，支持多端口的可以填写，否则留空
 const HY2_PORT = process.env.HY2_PORT || '';                 // hy2端口，支持多端口的可以填写，否则留空
